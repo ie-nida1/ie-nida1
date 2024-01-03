@@ -116,6 +116,12 @@ let swiperNew = new Swiper('.new__swiper', {
     loop: true,
     spaceBetween: 16,
     slidesPerView: 'auto',
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+
+    },
     
     breakpoints: {
         1150: {
