@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-------HEADER --------> 
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="https://www.samsung.com/us/" class="nav__logo"> 
+             <h2><i class="ri-smartphone-line"></i> Samsung </h2>
+            </a>
+    
+        <!-------MENU-------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-smartphone-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-bookmark-line"></i> 
+                            <span>New Phones</span>
+                        </a>
+                    </li>
+    
+                    <li class="nav__item">
+                        <a href="#ratingsandreviews" class="nav__link">
+                            <i class="ri-feedback-line"></i>
+                            <span>Ratings and Reviews</span>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+  
+            <div class="nav__actions">
+                 <!--------SEARCH BUTTON------->
+                 <i class="ri-search-line search-button" id="search-button"></i>
+                 
+                 <!-------LOGIN-------->
+                 <i class="ri-user-line login-button" id="login-button"></i>
+  
+                 <!-------ADD TO CART------->
+                 <i class="ri-shopping-cart-2-line cart-button" id="cart-button"></i>
+  
+                 <!-------THEME------->
+                 <i class="ri-moon-line changing-theme" id="theme-button"></i>
+  
+            </div>
+            
+        </nav>
+    </header>
+  
+    <!-------SEARCH------->
+    <div class="search" id="search-content">
+        <h2 class="search__title">What are you looking for?</h2>
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Search Keyword" class="search__input">
+        </form>
+                
+        <form action="" class="search__type">
+            <button type="submit" class="search__button button">Galaxy Z Fold5</button>
+            <button type="submit" class="search__button button">Galaxy Tab9</button>
+            <button type="submit" class="search__button button">The Frame</button>
+            <button type="submit" class="search__button button">QLED 8K</button>
+            <button type="submit" class="search__button button">BESPOKE Jet</button>
+            <button type="submit" class="search__button button">BESPOKE Refrigerator</button>
+            <button type="submit" class="search__button button">Accessories</button>
+        </form>
+       
+        <i class="ri-close-line close-bar" id="search-close"></i>
+    </div>
+  
+    <!-------LOGIN------->
+    <div class="login grid" id="login-content">
+        <form action="#" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+            
+            <!--------LOGIN PAGE-------->
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Enter your email" id="login-email" class="login__input">
+                </div>
+    
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="login-pass" class="login__input">
+                </div>
+            </div>
+    
+            <div>
+                <span class="login__signup">
+                    You don't have an account? <a href="#">Sign Up</a>
+                </span>
+    
+                <a href="#" class="login__forgot">
+                    Forgot Password?
+                </a>
+    
+                <button type="submit" class="login__button button">Log In</button>
+            </div>
+        </form>
+    
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+  
+    <!------CART------->
+    <div class="cart grid" id="cart-content">
+        <form action="#" class="cart__form grid">
+            <h3 class="cart__title">Cart</h3>
+            
+            <!--------CART PAGE-------->
+    
+            <div>
+                <h2 class="cart__signup">
+                    Your cart is empty 
+                </h2>
+    
+                <h3 class="cart__signin">
+                    Sign in to see if you saved some items in cart
+                </h3>
+    
+                <button type="submit" class="cart__button button">Sign In</button>
+
+            </div>
+            <a href="#" class="cart__shopping">Continue Shopping</a>
+        </form>
+         
+        <i class="ri-close-line cart__close" id="cart-close"></i>
+    </div>
+
+    <!------HOME------>
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Samsung Fusion: <br>
+                    Where Style Meets Power
+                </h1>
+  
+  
+                <p class="home__description">
+                    Explore and choose digital 
+                    content with ease on your 
+                    Samsung phone, unlocking a 
+                    world of possibilities at 
+                    your fingertips.
+                </p>
+  
+                <a href="#" class="button">Explore Now</a>
+            </div>
+  
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <img src="s21ultra.png" alt="image" class="home__img">
+                        </article>
+  
+                        <article class="home__article swiper-slide">
+                            <img src="s21.png" alt="image" class="home__img">
+                        </article>
+  
+                        <article class="home__article swiper-slide">
+                            <img src="s22.png" alt="image" class="home__img">
+                        </article>
+  
+                        <article class="home__article swiper-slide">
+                            <img src="s23.png" alt="image" class="home__img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------SERVICES------>
+    <section class="service section">
+        <div class="services__container container grid">
+            <article class="services__card">
+                <i class="ri-settings-5-fill"></i>
+                <h3 class="services__title">Your Service Online Booking Portal</h3>
+                <p class="services__description">Samsung's online portal <br>
+                    streamlines service<br>
+                     bookings.</p>
+            </article>
+
+            <article class="services__card">
+                <i class="ri-map-pin-line"></i> 
+                <h3 class="services__title">Service Center</h3>
+                <p class="services__description">Samsung service centers <br>
+                    provide quick, <br>
+                    expert support.</p>
+            </article>
+
+            <article class="services__card">
+                <i class="ri-headphone-line"></i>
+                <h3 class="services__title">Remorte Support</h3>
+                <p class="services__description">Samsung offers remote <br>
+                    support for quick
+                    <br> troubleshooting.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-------FEATURED-------->
+    <section class="featured section" id="featured">
+        <h2 class="section__title">
+            Shop all latest offers and innovations
+        </h2>
+
+         <!-------FEATURED PAGE-------->
+        <div class="featured__container container">
+            <div class="featured__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="featured__card swiper-slide">
+                        <img src="galaxy buds2.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Galaxy Buds2 Pro</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $60</span>
+                            <span class="featured__price">From $169.99</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="7.5 cu. ft. Electric Dryer with Steam Sanitize+.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">7.5 cu. Electric Dryer</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $450</span>
+                            <span class="featured__price">From $699</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Galaxy Watch6 Classic, 47mm.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Galaxy Watch6 Classic, 47mm</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $70</span>
+                            <span class="featured__price">From $359.99</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="galaxy buds fe.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Galaxy Buds FE</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $20</span>
+                            <span class="featured__price">From $79.99</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="55The frame.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">55" The Frame</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $300</span>
+                            <span class="featured__price">From $1199.99</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Galaxy Book3 Pro 360, 16.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Galaxy Book3 Pro 360, 16"</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $1182</span>
+                            <span class="featured__price">From $1449.99</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Galaxy A24.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Galaxy A24</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $70</span>
+                            <span class="featured__price">From $169.08</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Samsung Galaxy A34.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Samsung Galaxy A34</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $70</span>
+                            <span class="featured__price">From 217.55 </span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Samsung Galaxy s23Ultra.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Samsung Galaxy S23Ultra</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $100</span>
+                            <span class="featured__price">From $924.92</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="Samsung Galaxy Watch5 Smart Watch-.png" alt="" class="featured__img">
+
+                        <h2 class="featured__title">Samsung Galaxy Watch5 Smart Watch</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">Save $60</span>
+                            <span class="featured__price">From $150.57</span>
+                        </div>
+
+                        <button class="button">Buy now</button>
+
+                        <div class="featured__innovations">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-3-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------DISCOUNT-------->
+    <section class="discount section" id="discount">
+        <div class="discount__container container grid">
+            <div class="discount__data">
+                <h2 class="discount__title section__title">
+                    Get upto 50% discount and other benefits
+                </h2>
+
+                <p class="discount__description">
+                    Samsung's discounts open doors to cutting-edge  
+                    innovation at affordable prices. From smartphones 
+                    to smartwatches, these offers reflect Samsung's 
+                    commitment to making advanced technology accessible 
+                    for all, allowing users to stay ahead without breaking 
+                    the bank.
+                </p>
+
+                <a href="#" class="button">Buy Now</a>
+            </div>
+
+            <div class="discount__images">
+                <img src="s23 .png" alt="" class="discount__img1">
+                <img src="s21 .png" alt="" class="discount__img2">
+            </div>
+        </div>
+    </section>
+
+    <!--------NEW PHONES-------->
+    <section class="new phones" id="new">
+        <h2 class="new__heading section__title">
+            Samsung's Latest Phones and Innovations
+        </h2>
+
+        <div class="new__container container">
+            <div class="new__swiper swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Galaxy Z Fold5.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Galaxy Z Fold5</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get Upto $1000</span>
+                                <span class="new__price">From $1,799.99</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Galaxy S23 FE.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Galaxy S23 FE</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Enjoy upto $200</span>
+                                <span class="new__price">From $521.95</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Galaxy Tab S9 Series.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Galaxy Tab S9 Series</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $700</span>
+                                <span class="new__price">From $1,072.48</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Galaxy S23.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> Galaxy S23</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $100</span>
+                                <span class="new__price">From $656.99</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Neo QLED 4K QN90C.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Neo QLED 4K QN90C</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $900 </span>
+                                <span class="new__price">From $2,724.90</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="OLED.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> OLED</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $600</span>
+                                <span class="new__price">From $1,388.31</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Q-Series Soundbar Q900C.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> Q-Series Soundbar Q900C</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $200</span>
+                                <span class="new__price">From $503.16</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung 501 Liter Refrigerator.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung 501 Liter Refrigerator</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $600</span>
+                                <span class="new__price">From $1,143.27</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung SAWADRGW54001.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung SAWADRGW54001</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $450</span>
+                                <span class="new__price">From $571.23</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Bespoke Vacuum.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> Bespoke Vacuum</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $700</span>
+                                <span class="new__price">From $1,088.82</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="new__swiper swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy S23 Ultra.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Galaxy S23 Ultra</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get Upto $300</span>
+                                <span class="new__price">From $865.55</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy A14 LTE.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Galaxy A14 LTE</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Enjoy upto $60</span>
+                                <span class="new__price">From $117.58</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy A04.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Galaxy A04</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $10</span>
+                                <span class="new__price">From $95.02</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung 70 Inch TV Crystal UHD Crystal.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> Samsung 70 Inch TV Crystal UHD Crystal</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $300</span>
+                                <span class="new__price">From $673.17</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy Tab S9 FE.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Galaxy Tab S9 FE+</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $300 </span>
+                                <span class="new__price">From $748.48 </span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy Flip4.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> Samsung Galaxy Flip4 </h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $200</span>
+                                <span class="new__price">From $571.50</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Galaxy A53.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Galaxy A53</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Save upto $90</span>
+                                <span class="new__price">From $309.85</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="SAMSUNG Galaxy Z Fold 3.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">SAMSUNG Galaxy Z Fold 3 </h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $300</span>
+                                <span class="new__price">From $664.34 </span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="Samsung Buds Live Bronze.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title">Samsung Buds Live Bronze</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $20</span>
+                                <span class="new__price">From $68.88</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="new__card  swiper-slide">
+                        <img src="QCY T13 Wireless Bluetooth Earbuds.png" alt="image" class="new__img">
+
+                        <div>
+                            <h2 class="new__title"> QCY T13 Wireless Bluetooth Earbuds</h2>
+                            <div class="new__prices">
+                                <span class="new__discount">Get upto $10</span>
+                                <span class="new__price">From $22.87</span>
+                            </div>
+
+                            <div class="new__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------LOOKING------>
+    <section class="looking section">
+        <div class="looking__container">
+            <video autoplay loop muted plays-inline class="looking__bg">
+                <source src="Introducing Galaxy S23 Ultra, Buds2 Pro, Watch5 _ Samsung.mp4" type="video/mp4">
+            </video>
+
+            <div class="looking__data container grid">
+                <h2 class="looking__title section__title">
+                    Looking for something else?
+                </h2>
+                <input type="Search" placeholder="Search Keyword" class="looking__input">
+                <form action="" class="looking__form">
+                    <button type="submit" class="looking__button button">Galaxy Z Fold5</button>
+                    <button type="submit" class="looking__button button">Galaxy Tab9</button>
+                    <button type="submit" class="looking__button button">The Frame</button>
+                    <button type="submit" class="looking__button button">QLED 8K</button>
+                    <button type="submit" class="looking__button button">BESPOKE Jet</button>
+                    <button type="submit" class="looking__button button">BESPOKE Refrigerator</button>
+                    <button type="submit" class="looking__button button">Accessories</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--------RATINGS AND REVIEWS------->
+    <section class="ratings section" id="ratingsandreviews">
+        <div class="wrapper">
+            <h2 class="ratings__title section__title">
+                Ratings and Reviews
+            </h2>
+            <form action="#">
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class="ri-star-line star" style="--i: 0;"></i>
+                    <i class="ri-star-line star" style="--i: 1;"></i>
+                    <i class="ri-star-line star" style="--i: 2;"></i>
+                    <i class="ri-star-line star" style="--i: 3;"></i>
+                    <i class="ri-star-line star" style="--i: 4;"></i>
+                </div>
+                <textarea name="opinion" cols="30" rows="5"  placeholder="Your Opinion..."></textarea>
+                <div class="btn-group">
+                    <button type="submit" class="btn submit">Submit</button>
+                    <button class="btn cancel">Cancel</button>
+                </div>
+    
+            </form>
+        </div>
+    </section>
+
+    <!-------FOOTER------->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="" class="footer__logo">
+                    <i class="ri-smartphone-line"></i> Samsung 
+                </a>
+
+                <p class="footer__description">
+                    Join the Samsung community and share your<br> 
+                    Samsung experience with us. Your reviews <br>
+                    matter as we strive for excellence in <br>
+                    delivering top-notch technology and <br>
+                    innovation.<br>
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">Shop</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Phones</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Tadlets</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Watches</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Chat with Us</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Product Help</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Order Help</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Offers</h3>
+                    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Offers</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Samsung <br>
+                                Rewards</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Referral Program</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Governtment <br>
+                                Offers Program</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Sustainability</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Overview</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Environment</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Digital <br>
+                                Resposibility</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Security and <br>
+                                 Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">About us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.samsung.com/us/about-us/leadership-and-mission/" class="footer__link">Leadership & <br>
+                                Mission</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.samsung.com/us/about-us/our-business/" class="footer__link">Our Business</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.samsung.com/us/about-us/brand-identity/" class="footer__link">Brand Identity</a>
+                        </li>
+
+                        <li>
+                            <a href="https://design.samsung.com/global/index.html" class="footer__link">Samsung Designs <i class="ri-arrow-right-up-line"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/SamsungUS" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+
+                        <a href="https://twitter.com/SamsungUS" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/samsungmobileusa/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/samsungus" target="_blank" class="footer__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+
+                        <a href="https://account.samsung.com/membership/intro" target="_blank" class="footer__social-link">
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            Copyright &copy; 1995-2023 SAMSUNG All Rights Reserved.
+          
+        </span>
+    </footer>
+
+    <!--------SCROLL UP-------->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scroll"></i>
+    </a>
+ 
+    <script src="js/scrollreveal.min.js"></script>
+      <!--=============== SWIPER JS ===============-->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="js/main.js"></script>
+</body>
+</html>
+
