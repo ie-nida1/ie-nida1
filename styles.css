@@ -1147,30 +1147,39 @@ textarea {
 /*MEDIA SCREENS*/
 
 /*FOR SMALL DEVICES*/
+/* Media query for smaller devices (max-width: 320px) */
 @media screen and (max-width: 320px) {
     .container {
-        margin-inline: 1rem;
+      margin-inline: 1rem;
     }
-
+  
     .nav__menu {
-        padding-inline: 3rem;
+      padding: 0.5rem; /* Adjust the padding for the navigation menu */
+      padding-inline: 1.5rem; /* Adjust the horizontal padding for the navigation menu */
     }
-
+  
+    .nav__link i {
+      font-size: 1rem; /* Adjust the font size of top icons */
+    }
+  
     .discount__img1,
-    .discount__img2{
-        width: 140px;
+    .discount__img2 {
+      width: 140px;
     }
-
-    .new__card{
-        flex-direction: column;
+  
+    .new__card {
+      flex-direction: column;
     }
-
-    .footer__data{
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
+  
+    .footer__data {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
     }
-
-}
+  
+    /* Add more adjustments as needed */
+  
+  }
+  
 
 /*MEDIA SCREEN FOR MEDIUM DEVICES*/
 @media screen and (min-width: 450px) {
@@ -1259,7 +1268,7 @@ textarea {
 }
 
 /*MEDIA SCREEN FOR LARGE DEVICES*/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1155px) {
     .section {
         padding-block: 4rem 2rem; /* Adjust padding as needed */
     }
