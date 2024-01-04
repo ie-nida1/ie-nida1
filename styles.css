@@ -1147,7 +1147,7 @@ textarea {
 /*MEDIA SCREENS*/
 
 /*FOR SMALL DEVICES*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 320px) {
     .container {
         margin-inline: 1rem;
     }
@@ -1236,7 +1236,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 880px){
+@media screen and (min-width: 768px){
     .home__container{
         grid-template-columns: 580px;
     }
@@ -1259,7 +1259,7 @@ textarea {
 }
 
 /*MEDIA SCREEN FOR LARGE DEVICES*/
-@media screen and (min-width: 1155px) {
+@media screen and (min-width: 1150px) {
     .section {
         padding-block: 4rem 2rem; /* Adjust padding as needed */
     }
