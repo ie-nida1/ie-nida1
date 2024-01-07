@@ -907,7 +907,7 @@
             <h2 class="ratings__title section__title">
                 Ratings and Reviews
             </h2>
-            <form action="#">
+            <form id="reviewForm">
                 <div class="rating">
                     <input type="number" name="rating" hidden>
                     <i class="ri-star-line star" style="--i: 0;"></i>
@@ -916,16 +916,15 @@
                     <i class="ri-star-line star" style="--i: 3;"></i>
                     <i class="ri-star-line star" style="--i: 4;"></i>
                 </div>
-                <textarea name="opinion" cols="30" rows="5"  placeholder="Your Opinion..."></textarea>
+                <textarea name="opinion" cols="30" rows="5" placeholder="Your Opinion..."></textarea>
                 <div class="btn-group">
-                    <button type="submit" class="btn submit">Submit</button>
+                    <button type="submit" class="btn submit" id="submit-review">Submit</button>
                     <button class="btn cancel">Cancel</button>
                 </div>
-    
             </form>
         </div>
     </section>
-
+    
     <!-------FOOTER------->
     <footer class="footer">
         <div class="footer__container container grid">

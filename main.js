@@ -229,3 +229,23 @@ sr.reveal(`.home__images`, {delay:600})
 sr.reveal(`.services__card`, {interval:100})
 sr.reveal(`.discount__data`, {origin:'left'})
 sr.reveal(`.discount__images`, {origin:'right'})
+
+/*SUBMISSION REVIEWS */
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    const formData = new FormData(this);
+
+    // Simulate sending email
+    const rating = formData.get('rating');
+    const opinion = formData.get('opinion');
+    const emailContent = `Rating: ${rating}\nOpinion: ${opinion}`;
+    console.log(emailContent); // For demonstration, log the email content
+
+    // Construct a mailto link with form content
+    const mailtoLink = `mailto:nida.nidashahzad@gmail.com?subject=Review&body=${encodeURIComponent(emailContent)}`;
+
+    // Open the user's default email client with pre-filled content
+    window.location.href = mailtoLink;
+});

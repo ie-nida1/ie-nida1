@@ -1147,39 +1147,33 @@ textarea {
 /*MEDIA SCREENS*/
 
 /*FOR SMALL DEVICES*/
-/* Media query for smaller devices (max-width: 320px) */
 @media screen and (max-width: 320px) {
+
     .container {
-      margin-inline: 1rem;
+        margin-inline: 1rem;
     }
-  
+
     .nav__menu {
-      padding: 0.5rem; /* Adjust the padding for the navigation menu */
-      padding-inline: 1.5rem; /* Adjust the horizontal padding for the navigation menu */
+        padding-inline: 3rem;
     }
-  
-    .nav__link i {
-      font-size: 1rem; /* Adjust the font size of top icons */
-    }
-  
+
     .discount__img1,
-    .discount__img2 {
-      width: 140px;
+    .discount__img2{
+        width: 140px;
     }
-  
-    .new__card {
-      flex-direction: column;
+
+    .new__card{
+        flex-direction: column;
     }
-  
-    .footer__data {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
+
+    .footer__data{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
     }
-  
-    /* Add more adjustments as needed */
-  
-  }
-  
+
+    
+
+}
 
 /*MEDIA SCREEN FOR MEDIUM DEVICES*/
 @media screen and (min-width: 450px) {
@@ -1270,12 +1264,12 @@ textarea {
 /*MEDIA SCREEN FOR LARGE DEVICES*/
 @media screen and (min-width: 1155px) {
     .section {
-        padding-block: 4rem 2rem; /* Adjust padding as needed */
+        padding-block: 4rem 2rem; 
     }
 
     .nav {
-        height: 4.5rem; /* Adjust height as needed */
-        column-gap: 2rem; /* Adjust gap as needed */
+        height: 4.5rem; 
+        column-gap: 2rem; 
     }
 
     .nav__menu {
@@ -1308,11 +1302,11 @@ textarea {
     }
 
     .services__container {
-        column-gap: 4rem; /* Adjust gap as needed */
+        column-gap: 4rem; 
     }
 
     .services__card i {
-        font-size: 3rem; /* Adjust font size as needed */
+        font-size: 3rem; 
     }
 
     .featured__container {
@@ -1339,53 +1333,53 @@ textarea {
     }
 
     .discount__description {
-        margin-bottom: 2rem; /* Adjust margin as needed */
+        margin-bottom: 2rem; 
     }
 
     .discount__img1,
     .discount__img2 {
-        width: 150px; /* Adjust width as needed */
+        width: 150px; 
     }
 
     .new__container {
-        padding-top: 2rem; /* Adjust padding as needed */
+        padding-top: 2rem; 
     }
 
     .new__card {
-        padding: 1rem; /* Adjust padding as needed */
+        padding: 1rem; 
     }
 
     .new__img {
-        width: 80px; /* Adjust width as needed */
+        width: 80px;
     }
 
     .looking__bg {
         justify-self: center;
-        object-position: center; /* Center the object position */
+        object-position: center; 
     }
 
     .ratings__title {
-        font-size: 1.25rem; /* Adjust font size as needed */
+        font-size: 1.25rem; 
     }
 
     .footer {
-        padding-block: 3rem 1rem; /* Adjust padding as needed */
+        padding-block: 3rem 1rem; 
     }
 
     .footer__data {
-        grid-template-columns: repeat(4, 1fr); /* Divide into four equal columns */
-        column-gap: 2rem; /* Adjust gap as needed */
+        grid-template-columns: repeat(4, 1fr); 
+        column-gap: 2rem; 
     }
 
 
     .footer__logo,
     .featured__title {
-        font-size: 1.5rem; /* Adjust font size as needed */
-        margin-bottom: 1rem; /* Adjust margin as needed */
+        font-size: 1.5rem;
+        margin-bottom: 1rem; 
     }
 
     .footer__links {
-        row-gap: 0.5rem; /* Adjust gap as needed */
+        row-gap: 0.5rem;
     }
 
     .footer__social {
@@ -1393,19 +1387,19 @@ textarea {
     }
 
     .footer__social-link {
-        font-size: 1.25rem; /* Adjust font size as needed */
+        font-size: 1.25rem; 
     }
 
     .footer__copy {
-        margin-top: 3rem; /* Adjust margin as needed */
+        margin-top: 3rem; 
     }
 
     .scrollup {
-        right: 2rem; /* Adjust position as needed */
+        right: 2rem; 
     }
 
     .show-scroll {
-        bottom: 2rem; /* Adjust position as needed */
+        bottom: 2rem; 
     }
 }
 
