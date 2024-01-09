@@ -110,6 +110,7 @@ let swiperFeatured = new Swiper('.featured__swiper', {
     }
 })
 
+/*POPUP FEATURED IMAGES*/
 
 /*NEW SWIPER*/
 let swiperNew = new Swiper('.new__swiper', {
